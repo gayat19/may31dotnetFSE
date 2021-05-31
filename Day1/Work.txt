@@ -1,0 +1,16 @@
+Words - KeyWords
+Grammer - Syntax
+Variables,Datatypes - Pri vs Ref
+Language
+  Seq
+  Selection
+  Iter
+
+Datatypes link
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
+
+
+Question link
+https://www.hackerrank.com/challenges/sparse-arrays/problem
+
+  

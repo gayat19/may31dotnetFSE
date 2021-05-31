@@ -1,0 +1,13 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\bin\Debug\netcoreapp3.1\FirstVSApp.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\bin\Debug\netcoreapp3.1\FirstVSApp.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\bin\Debug\netcoreapp3.1\FirstVSApp.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\bin\Debug\netcoreapp3.1\FirstVSApp.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\bin\Debug\netcoreapp3.1\FirstVSApp.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\bin\Debug\netcoreapp3.1\FirstVSApp.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstVSApp\obj\Debug\netcoreapp3.1\FirstVSApp.genruntimeconfig.cache

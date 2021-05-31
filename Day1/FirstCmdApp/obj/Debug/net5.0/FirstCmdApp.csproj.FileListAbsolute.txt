@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\FirstCmdApp.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\FirstCmdApp.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\FirstCmdApp.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\FirstCmdApp.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\FirstCmdApp.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\ref\FirstCmdApp.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\bin\Debug\net5.0\FirstCmdApp.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\ref\FirstCmdApp.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day1\FirstCmdApp\obj\Debug\net5.0\FirstCmdApp.genruntimeconfig.cache
