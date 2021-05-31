@@ -1,3 +1,13 @@
+Downloads
+https://visualstudio.microsoft.com/downloads/
+https://www.microsoft.com/en-in/download/details.aspx?id=101064
+https://github.com/
+https://gitforwindows.org/
+My Repo link
+https://github.com/gayat19/may31dotnetFSE.git
+
+
+
 Words - KeyWords
 Grammer - Syntax
 Variables,Datatypes - Pri vs Ref
@@ -5,6 +15,7 @@ Language
   Seq
   Selection
   Iter
+
 
 Datatypes link
 https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
