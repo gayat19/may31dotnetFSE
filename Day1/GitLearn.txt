@@ -1,0 +1,15 @@
+https://github.com/ - create an account in the remote repo
+https://gitforwindows.org/ - download and install for local repo
+
+choose a folder for your work
+in the cmd prompt
+init a new local repo
+  git init
+Add all the files for staging
+ git add -A
+commit all the fies to the local repo
+ git commit -m "first commit"
+Link the local repo with the remote repo
+ git remote add origin https://github.com/gayat19/may31dotnetFSE.git
+Push the local commit to remote commit
+ git push origin master
