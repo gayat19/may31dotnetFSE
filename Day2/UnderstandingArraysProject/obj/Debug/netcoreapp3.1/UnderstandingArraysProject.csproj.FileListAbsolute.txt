@@ -1,0 +1,13 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\bin\Debug\netcoreapp3.1\UnderstandingArraysProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day2\UnderstandingArraysProject\obj\Debug\netcoreapp3.1\UnderstandingArraysProject.genruntimeconfig.cache

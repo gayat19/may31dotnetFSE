@@ -1,0 +1,22 @@
+tech
+  do-while
+  datatypes - value,refference
+  Runtime - CLR
+    Memory -> static,heap,function,stack
+  arrays
+domain
+  requirement understanding
+Choose any project you wish to do and start to create a requirement document
+    SRS-> Software Requiremnet specification
+    Design the flow of the application
+     Screen by screen flow of your application requirement
+     In every screen please specify the data that would be shown/Taken
+    Create the prototype
+Few Topics to choose from
+E-Com Application
+Pizza order application
+Bus booking application
+Auction Application
+Hotel Booking Application
+Clinc Automation Application
+Library Management Application
