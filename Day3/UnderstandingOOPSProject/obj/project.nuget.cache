@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "O3xZL1xyaFe54ZGJoqCs1QOzW9cfVae1Elt6qil7ABqv0naWvnP58PuIjSOFjb0WsZ/u/fyrGCVwao/8kZcpQg==",
+  "success": true,
+  "projectFilePath": "D:\\Data\\d drive\\Corp\\Srushti\\Collabra\\May31\\Participants\\Day3\\UnderstandingOOPSProject\\UnderstandingOOPSProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gayat\\.nuget\\packages\\sonaranalyzer.csharp\\8.23.0.32424\\sonaranalyzer.csharp.8.23.0.32424.nupkg.sha512"
+  ],
+  "logs": []
+}

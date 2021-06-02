@@ -1,2 +1,4 @@
 01-June-2021
 System.IndexOutOfRangeException: 'Index was outside the bounds of the array.'
+02-June-2021
+System.NullReferenceException : 'Object reference not set to an instance of an object.'

@@ -1,0 +1,13 @@
+Modular Programming
+OOPS
+  Class
+  Object
+  Encapsulation
+  Inheritance
+  Polymorhism
+     Dynamic - Overriding
+     Static - Overloading
+  Abstraction
+
+Code Challenge
+https://www.hackerrank.com/challenges/maximum-element/

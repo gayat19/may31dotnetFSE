@@ -20,3 +20,10 @@ Auction Application
 Hotel Booking Application
 Clinc Automation Application
 Library Management Application
+
+
+Link for learning
+https://docs.microsoft.com/en-us/dotnet/standard/clr
+
+Challenge for the day
+https://www.hackerrank.com/challenges/arrays-ds/problem

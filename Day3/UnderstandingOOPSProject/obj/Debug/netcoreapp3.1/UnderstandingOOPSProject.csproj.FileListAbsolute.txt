@@ -1,0 +1,13 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\bin\Debug\netcoreapp3.1\UnderstandingOOPSProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day3\UnderstandingOOPSProject\obj\Debug\netcoreapp3.1\UnderstandingOOPSProject.genruntimeconfig.cache

@@ -1,0 +1,5 @@
+1) Always add summary to the methods
+2) Max cap for number of lines inside a method is 15
+3) DRY -> Don't Repeat yourself(only in code)
+4) Provide the proper access to the members
+5) 
