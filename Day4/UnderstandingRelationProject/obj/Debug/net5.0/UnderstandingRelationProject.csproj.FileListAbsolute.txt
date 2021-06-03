@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\UnderstandingRelationProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\UnderstandingRelationProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\UnderstandingRelationProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\UnderstandingRelationProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\UnderstandingRelationProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\ref\UnderstandingRelationProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\bin\Debug\net5.0\UnderstandingRelationProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\ref\UnderstandingRelationProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day4\UnderstandingRelationProject\obj\Debug\net5.0\UnderstandingRelationProject.genruntimeconfig.cache

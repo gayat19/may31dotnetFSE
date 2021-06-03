@@ -1,0 +1,16 @@
+Association
+   
+
+Inheritance
+   Single/Simple
+   MultiLevel
+   Hirerachial
+Base->Derived
+
+Overriding -> Dynamic polymorphism
+
+code Challenge 
+https://www.hackerrank.com/challenges/2d-array/problem
+
+Learning Link
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
