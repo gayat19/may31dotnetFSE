@@ -1,0 +1,21 @@
+Overloading -> static polymorphism
+  order,number or datatype of parameter
+Methods,Contructors,Indexer,Operator
+ Creating Model class and working with it
+CRUD -> Create Read Update Delete
+
+Patient
+   Id
+   Name
+   Phone
+   Age
+   Remarks
+   Gender
+   Weight
+   Height
+
+Nullable types
+ErrorHandling
+   
+
+ 

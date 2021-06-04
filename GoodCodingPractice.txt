@@ -4,4 +4,5 @@ https://dotnet.github.io/docfx/guideline/csharp_coding_standards.html
 2) Max cap for number of lines inside a method is 15
 3) DRY -> Don't Repeat yourself(only in code)
 4) Provide the proper access to the members- not too much and not too less
-5) 
+5) Pluralize collection refference name
+6) Avoid else as much as possible

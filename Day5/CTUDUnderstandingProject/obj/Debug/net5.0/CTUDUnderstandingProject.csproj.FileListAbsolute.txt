@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\CTUDUnderstandingProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\CTUDUnderstandingProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\CTUDUnderstandingProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\CTUDUnderstandingProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\CTUDUnderstandingProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\ref\CTUDUnderstandingProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\bin\Debug\net5.0\CTUDUnderstandingProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\ref\CTUDUnderstandingProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day5\CTUDUnderstandingProject\obj\Debug\net5.0\CTUDUnderstandingProject.genruntimeconfig.cache
