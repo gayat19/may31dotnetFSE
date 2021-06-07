@@ -6,3 +6,5 @@ https://dotnet.github.io/docfx/guideline/csharp_coding_standards.html
 4) Provide the proper access to the members- not too much and not too less
 5) Pluralize collection refference name
 6) Avoid else as much as possible
+7) Proper Indending of code is compulsory
+8) Design with Interface

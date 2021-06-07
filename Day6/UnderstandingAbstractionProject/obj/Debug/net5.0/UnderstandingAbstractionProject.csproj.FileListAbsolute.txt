@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\UnderstandingAbstractionProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\UnderstandingAbstractionProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\UnderstandingAbstractionProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\UnderstandingAbstractionProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\UnderstandingAbstractionProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\ref\UnderstandingAbstractionProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\bin\Debug\net5.0\UnderstandingAbstractionProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\ref\UnderstandingAbstractionProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingAbstractionProject\obj\Debug\net5.0\UnderstandingAbstractionProject.genruntimeconfig.cache

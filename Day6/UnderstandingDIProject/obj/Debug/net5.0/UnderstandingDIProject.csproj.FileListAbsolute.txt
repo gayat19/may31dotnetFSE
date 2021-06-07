@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\UnderstandingDIProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\UnderstandingDIProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\UnderstandingDIProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\UnderstandingDIProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\UnderstandingDIProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\ref\UnderstandingDIProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\bin\Debug\net5.0\UnderstandingDIProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\ref\UnderstandingDIProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day6\UnderstandingDIProject\obj\Debug\net5.0\UnderstandingDIProject.genruntimeconfig.cache

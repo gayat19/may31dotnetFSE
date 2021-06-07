@@ -1,0 +1,16 @@
+Overloading
+  Operator
+Indexer
+
+Abstract Class
+Interface - way of abstracting an object
+Abstraction - swowing whatever is needed
+
+Dependency Injection
+
+Collection
+
+Syntax error
+Exceptions
+Logical Error
+

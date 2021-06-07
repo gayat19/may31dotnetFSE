@@ -1,0 +1,10 @@
+Create a Account class
+The object of the class will show the following functionalities to User
+  OpenAccount
+  DoTrasaction
+  CloseAccount
+and will show the following to Bank
+  ApplyFine
+  RetriveCardAmount
+  BarAccount
+

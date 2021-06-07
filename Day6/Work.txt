@@ -1,0 +1,18 @@
+Overloading
+  Operator
+Indexer
+
+Abstract Class - Cannot be instantiated
+Interface - way of abstracting an object
+Abstraction - swowing whatever is needed
+
+Dependency Injection - Loose Coupling
+
+Collection -List
+
+Syntax error
+Exceptions
+Logical Error
+
+Repo
+

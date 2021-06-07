@@ -1,0 +1,22 @@
+1) Create a program that will take a 16 digit number from user
+the card number
+4477 4683 4311 3002
+Reverse the number
+2003 1134 3864 7744
+Even position number multiply by 2
+2+0+0+6+1+2+3+8+3+16+6+8+7+14+4+8
+sum up the 2 digit numbers
+2+0+0+6+1+2+3+8+3+7+6+8+7+5+4+8
+70 % 10 = 0
+
+2) Take a minimum and a maximum number from user and print all the prime numbers between them.
+
+3) Take 11 numbers from user and find that one number which is not repeating
+example
+2,3,4,5,1,10,3,2,5,4,1
+10
+
+4) Take number from user until the user inserts a negative number.
+Sort and print all the values
+Find the median and mode(If no repeation then mode)
+Find the mean of that numbers that are divisible by  7
