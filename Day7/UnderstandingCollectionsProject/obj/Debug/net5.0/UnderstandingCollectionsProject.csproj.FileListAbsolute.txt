@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\UnderstandingCollectionsProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\UnderstandingCollectionsProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\UnderstandingCollectionsProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\UnderstandingCollectionsProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\UnderstandingCollectionsProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\ref\UnderstandingCollectionsProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\bin\Debug\net5.0\UnderstandingCollectionsProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\ref\UnderstandingCollectionsProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day7\UnderstandingCollectionsProject\obj\Debug\net5.0\UnderstandingCollectionsProject.genruntimeconfig.cache

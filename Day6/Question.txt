@@ -8,3 +8,37 @@ and will show the following to Bank
   RetriveCardAmount
   BarAccount
 
+Models that are required
+Pizza
+  id
+  Name
+  Price
+  Remarks
+  IsVeg
+Customer
+  Id
+  Name
+  Phone
+  Email
+Order
+  OrderId
+  CustomerId
+  Date
+  Total Amount
+Toppings
+  ToppingID
+  Name
+  IsVeg
+  Price
+Crusts
+  CrustId
+  Name
+  Price
+CustomPizza
+  
+OrderDetails
+  OrderId
+
+  Quantity
+Sequence diagram
+

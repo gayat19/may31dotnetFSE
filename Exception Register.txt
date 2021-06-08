@@ -4,3 +4,5 @@ System.IndexOutOfRangeException: 'Index was outside the bounds of the array.'
 System.NullReferenceException : 'Object reference not set to an instance of an object.'
 04-June-2021
 System.FormatException: 'Input string was not in a correct format.'
+08-June-2021
+System.InvalidOperationException: 'Failed to compare two elements in the array.'
