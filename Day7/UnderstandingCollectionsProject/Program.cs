@@ -31,6 +31,7 @@ namespace UnderstandingCollectionsProject
             names.Add("Jill");
             names.Add("ABC");
             names.Add("Jasmine");
+            names[0] = "Welcome";
             names.Sort();//Will sort the strings in ascending order
             foreach (var item in names)
             {
@@ -71,14 +72,61 @@ namespace UnderstandingCollectionsProject
             Console.WriteLine("is the employee Ramu in the list??? " + employees.Contains(new Employee(104, "Rose", 18)));
             Console.WriteLine("Enter the employee id to be found");
             int id = Convert.ToInt32(Console.ReadLine());
+            //Picks every item in collection and does teh comparison. The first matching result is returend
+            //If no match is found returns null
             Employee employee = employees.Find(emp => emp.Id == id);
 
             Console.WriteLine(employee);
         }
+        //set will not allow duplicates
+        void UnderstandingSet()
+        {
+            HashSet<int> set = new HashSet<int>();
+            set.Add(100);
+            set.Add(200);
+            set.Add(100);
+            set.Add(90);
+            foreach (var item in set)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        void UnderstandingDictionary()
+        {
+            Dictionary<int, string> myDictionary = new Dictionary<int, string>();
+            myDictionary.Add(101, "Ramu");
+            myDictionary.Add(102, "Jill");
+            myDictionary.Add(103, "ABC");
+            myDictionary.Add(104, null);
+            //myDictionary.Add(102, "Jill");
+            Console.WriteLine("Does the collection contain teh key 105?? "+myDictionary.ContainsKey(105));
+            Console.WriteLine("To access the value of the 102 "+myDictionary[102]);
+            Console.WriteLine("----------------------");
+            foreach (var item in myDictionary.Keys)
+            {
+                Console.WriteLine(myDictionary[item]);
+            }
+        }
+
+        //LIFO-> Push,Pop,Peek
+        void UnderstandStack()
+        {
+            Stack<Employee> employeeStack = new Stack<Employee>();
+            employeeStack.Push(new Employee() { Id = 101, Name = "ABC", Age = 21 });
+            employeeStack.Push(new Employee(102, "XYZ", 30));
+            employeeStack.Push(new Employee());
+            Console.WriteLine("Just to check the next retrivable item "+employeeStack.Peek());
+            Console.WriteLine("The size of the stack before the for loop is "+employeeStack.Count);
+            foreach (var item in employeeStack)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("The size of the stack after the for loop is " + employeeStack.Count);
+        }
         static void Main(string[] args)
         {
             Program progtam = new Program();
-            progtam.UnderstandingList();
+            progtam.UnderstandStack();
             Console.WriteLine("Hello World!");
             Console.ReadKey();
         }
