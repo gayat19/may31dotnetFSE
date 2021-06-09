@@ -1,0 +1,69 @@
+Attribute->column
+  Single
+  Derived
+  Multi-Value -> cannot be segrigated to multiple colums meaningfully. Have to be put in different rows
+  Complex -> can be split to multiple colums that make sense
+Tuple -> row
+
+EmpId-> Primary Key-> Not null, No Duplicates(or)only Unique->key attribute
+Name -> Attribute-> non key-> dependent on the primary key
+Age ->Attribute-> non key-> dependent on the primary key -> derived attribute coz its derived from the DateOfBirth
+Skill,SkillDec,SkillLevel-> Multi value attribute
+Address-> Complex attribute, could be split as door number, building name, street and area
+
+EmpId-> Foreign key referencing the Employee table
+EmpID+SkillName->Composite key-> Combination should be unique->Primary Key-> Not null, No Duplicates(or)only Unique->key attribute
+SkillDec-> partially dependent
+SkillLevel-> Multi value attribute
+
+
+Partial dependency-> may occur only on tables with composite key
+the non key attribute is dependent on partof teh key and not the whole key
+
+Transitive dependency-> The non key attribute is dependent on another non key attribute which is in turn dependent on the key attribute
+
+
+Employee
+EmpId-> Primary Key-> Not null, No Duplicates(or)only Unique->key attribute
+Name -> Attribute-> non key-> dependent on the primary key
+Age ->Derived from DateOfBirth
+
+
+1st NF-> 
+Primary Key
+No Multi-Value attribute
+Every column data should be of similar type
+
+2nd NF
+Table should be in 1NF
+No partial dependency
+
+3rd NF
+Table should be in 2NF
+No Transitive dependency
+
+DDL-> Create,alter,drop tables+database
+DML -> Insert,Update,Delete
+Select -> Select with -> where,group by, having, order by
+
+Joins
+  inner
+  outer
+    left
+    right
+    full
+  cross
+
+
+Stored procedures
+Triggers
+Functions
+
+select ..... from table [join table on cond]....
+where
+group by 
+having
+order by
+
+
+
