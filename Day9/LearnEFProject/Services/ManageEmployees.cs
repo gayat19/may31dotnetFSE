@@ -23,10 +23,38 @@ namespace LearnEFProject.Services
             context.SaveChanges();
             return true;
         }
+
+        public Employee GetEmployee(int id)
+        {
+            Employee employee = context.Employees.Where(emp => emp.Id == id).FirstOrDefault();
+            return employee;
+        }
+
+        public bool EditEmployee(int id,Employee employee)
+        {
+            Employee myEmployee = GetEmployee(id);
+            if(employee!=null)
+            {
+                myEmployee.Name = employee.Name;
+                myEmployee.Date_Of_Birth = employee.Date_Of_Birth;
+                //context.Employees.Update(myEmployee);
+                context.SaveChanges();
+                return true;
+            }
+            return false;
+        }
         public List<Employee> GetAllemployees()
         {
             //connect to database fetch all the emploeyes records, puts it in a list and gives us
             return context.Employees.ToList();
+        }
+
+        internal bool RemoveEmployee(int id)
+        {
+            Employee myEmployee = GetEmployee(id);
+            context.Employees.Remove(myEmployee);
+            context.SaveChanges();
+            return true;
         }
     }
 }

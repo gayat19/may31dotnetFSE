@@ -36,14 +36,33 @@ namespace LearnEFProject
                 Console.WriteLine(item.Date_Of_Birth);
                 Console.WriteLine("--------------------------");
             }
-
+        }
+        void UpdateEmployee()
+        {
+            Console.WriteLine("Please enter the employee id");
+            int id = Convert.ToInt32(Console.ReadLine());
+            Employee employee = TakeEmployeeDetails();
+            if(manageEmployees.EditEmployee(id,employee))
+                Console.WriteLine("Details updated");
+            else
+                Console.WriteLine("Hmmmmm. not updated");
+        }
+        void DeleteEmployee()
+        {
+            Console.WriteLine("Please enter the employee id");
+            int id = Convert.ToInt32(Console.ReadLine());
+            if (manageEmployees.RemoveEmployee(id))
+                Console.WriteLine("Employee deleted");
+            else
+                Console.WriteLine("Hmmmmm. not deleted");
         }
         static void Main(string[] args)
         {
             Program program = new Program();
-            program.CreateEmployee();
-            program.PrintEmployees();
+            //program.CreateEmployee();
+            program.DeleteEmployee();
             Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
     }
 }

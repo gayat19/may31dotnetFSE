@@ -16,3 +16,10 @@ EF
  Database First -> we create the database & table first-> from which teh model classes are created
 
 
+Create the model
+add as dbset in context
+Add-Migration
+Update database
+Start the CRUD
+
+
