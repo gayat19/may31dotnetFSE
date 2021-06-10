@@ -1,0 +1,18 @@
+1) Fetch all the titles that have not been sold
+
+2) Print the books that are sold by author from state 'CA'
+
+3) Print the average price of the books sold by every publisher
+result has 
+pulisher_name average_sale
+
+ADO.net-> quick look
+C# <->Adapter<->SQL
+  Connected -> connect-read and store/DML-disconnect
+  Disconnected-> read(put to the dataset)
+EF
+ ORM->object relation mapping
+ Code First -> model classes first->from which the tables are created
+ Database First -> we create the database & table first-> from which teh model classes are created
+
+
