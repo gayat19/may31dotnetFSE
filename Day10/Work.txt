@@ -27,7 +27,7 @@ BillDetails
   Quantity
 
 
-Primary key tahts not named ID
+Primary key thats not named ID
 Relationships
 Customer and USer -> one to one-> customer table will have teh username as the forieign key
 Bill and Customer have many to one relation
@@ -39,4 +39,13 @@ BillDetails has a composite key
 Exception
 
 try,catch,finally
+
+
+database First
+Scaffold-DbContext "Data source=DESKTOP-1C1EU5R;Integrated security=true;Initial Catalog=dbCompany" Microsoft.EntityFrameworkCore.SqlServer -o Models -context "CompanyContext"
+
+
+Scaffold-DbContext "Server=localhost;database=TestDb;uid=root;pwd=Password;" Pomelo.EntityFrameworkCore.MySql -OutputDir Models -f
+
+dotnet ef dbcontext scaffold "Server=localhost;Database=dbCompany;User=root;Password=Password;TreatTinyAsBoolean=true;" "Pomelo.EntityFrameworkCore.MySql"
   

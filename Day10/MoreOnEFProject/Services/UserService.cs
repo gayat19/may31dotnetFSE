@@ -41,6 +41,10 @@ namespace MoreOnEFProject.Services
             {
                 Console.WriteLine("Oops something went worng....");
             }
+            finally
+            {
+                Console.WriteLine("Always");
+            }
             return false;
         }
     }
