@@ -10,8 +10,8 @@ using MoreOnEFProject.Models;
 namespace MoreOnEFProject.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20210611041305_More Table")]
-    partial class MoreTable
+    [Migration("20210611050137_CompleteDatabase")]
+    partial class CompleteDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -42,6 +42,24 @@ namespace MoreOnEFProject.Migrations
                     b.HasIndex("CustomerId");
 
                     b.ToTable("Bills");
+                });
+
+            modelBuilder.Entity("MoreOnEFProject.Models.BillDetail", b =>
+                {
+                    b.Property<int>("BillNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ItemId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("BillNumber", "ItemId");
+
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("BillDetails");
                 });
 
             modelBuilder.Entity("MoreOnEFProject.Models.Customer", b =>
@@ -108,9 +126,30 @@ namespace MoreOnEFProject.Migrations
 
             modelBuilder.Entity("MoreOnEFProject.Models.Bill", b =>
                 {
-                    b.HasOne("MoreOnEFProject.Models.Customer", null)
+                    b.HasOne("MoreOnEFProject.Models.Customer", "Customer")
                         .WithMany("Bills")
                         .HasForeignKey("CustomerId");
+
+                    b.Navigation("Customer");
+                });
+
+            modelBuilder.Entity("MoreOnEFProject.Models.BillDetail", b =>
+                {
+                    b.HasOne("MoreOnEFProject.Models.Bill", "Bill")
+                        .WithMany()
+                        .HasForeignKey("BillNumber")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MoreOnEFProject.Models.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Bill");
+
+                    b.Navigation("Item");
                 });
 
             modelBuilder.Entity("MoreOnEFProject.Models.Customer", b =>

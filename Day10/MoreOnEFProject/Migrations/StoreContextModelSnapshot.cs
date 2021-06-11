@@ -124,9 +124,11 @@ namespace MoreOnEFProject.Migrations
 
             modelBuilder.Entity("MoreOnEFProject.Models.Bill", b =>
                 {
-                    b.HasOne("MoreOnEFProject.Models.Customer", null)
+                    b.HasOne("MoreOnEFProject.Models.Customer", "Customer")
                         .WithMany("Bills")
                         .HasForeignKey("CustomerId");
+
+                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("MoreOnEFProject.Models.BillDetail", b =>
