@@ -18,7 +18,8 @@ namespace MoreOnEFProject.Services
         {
             try
             {
-                User myUser = _context.users.Single(u => u.Username == user.Username && u.Password == user.Password);
+                User myUser = _context.users.Single(u => u.Username == user.Username 
+                && u.Password == user.Password);
                 if (myUser != null)
                     return true;
             }

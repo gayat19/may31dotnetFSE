@@ -3,5 +3,40 @@ annotations
   foreign key
 login
 
+user
+  username
+  password
+Customer
+  Id
+  Name
+  Age
+  username(foreinkey)
+Item
+  Id
+  Name
+  Price
+  Quantity
+Bill
+  BillNumber
+  Date
+  CustomerId
+  Amount
+BillDetails
+  BillNumber
+  ItemID
+  Quantity
+
+
+Primary key tahts not named ID
+Relationships
+Customer and USer -> one to one-> customer table will have teh username as the forieign key
+Bill and Customer have many to one relation
+BillDetails has a composite key
+
+
+
+
 Exception
+
+try,catch,finally
   

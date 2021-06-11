@@ -16,13 +16,19 @@ namespace MoreOnEFProject.Models
             optionsBuilder.UseSqlServer(connectionString);
         }
         public DbSet<User> users { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Bill> Bills { get; set; }
+        public DbSet<BillDetail> BillDetails { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //only if u need to seed the data
             modelBuilder.Entity<User>().HasData(new User
             {
                 Username = "ABC",
                 Password = "123"
             });
+            modelBuilder.Entity<BillDetail>().HasKey(k =>new {k.BillNumber,k.ItemId});
         }
     }
 }
