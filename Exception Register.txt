@@ -9,4 +9,6 @@ System.InvalidOperationException: 'Failed to compare two elements in the array.'
 System.ArgumentException: 'An item with the same key has already been added. Key: 102'
 10-June-2021
 System.InvalidOperationException: 'Invalid attempt to call Read when reader is closed.'
+11-June-2021
+System.InvalidOperationException: 'Sequence contains no elements'
 

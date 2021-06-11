@@ -23,3 +23,8 @@ Update database
 Start the CRUD
 
 
+
+Create the SkillTable(do a little research on primary key)
+Do CRUD on Skill
+
+

@@ -23,6 +23,11 @@ namespace LearnEFProject.Services
             context.SaveChanges();
             return true;
         }
+        public List<Employee> GetAllemployees()
+        {
+            //connect to database fetch all the emploeyes records, puts it in a list and gives us
+            return context.Employees.ToList();
+        }
 
         public Employee GetEmployee(int id)
         {
@@ -43,12 +48,6 @@ namespace LearnEFProject.Services
             }
             return false;
         }
-        public List<Employee> GetAllemployees()
-        {
-            //connect to database fetch all the emploeyes records, puts it in a list and gives us
-            return context.Employees.ToList();
-        }
-
         internal bool RemoveEmployee(int id)
         {
             Employee myEmployee = GetEmployee(id);
