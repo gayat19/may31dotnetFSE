@@ -1,0 +1,46 @@
+write a code that will find the one non repeating number and then check if it is prime
+
+class Program{
+
+int GetTheNonRepeatingNumber(int[] arr)
+{
+//your code here
+}
+
+void CheckIfNumberIsPrime(int num)
+{
+//your code here
+}
+
+static void Main(string[] arr)
+{
+   int[] numbers = {90,34,8,34,70,21,21,70,8};
+   Program program = new Program();
+   int number = program.GetTheNonRepeatingNumber(numbers);
+   program.CheckIfNumberIsPrime(number);
+   Console.ReadKey();
+}
+
+}
+
+
+create the following tables
+Customer-
+id(identity,primary key),
+name(manditory),
+age(default value 18), 
+phone (allows null),
+type(should allow only 'Gold','Silver')
+
+Insert these records into the table
+(101,'Jim',29,'9876543210','Gold')
+(102,'Vim',21,'4321098765','Silver')
+(103,'Sim',35,'5432987610','Gold')
+(104,'Jam',56,'2109876543','Silver')
+
+Select those customer whose name starts with 'J'
+Select those customers who have age greater than the average age of all the customers
+Print the number of cusomers in every type
+
+
+

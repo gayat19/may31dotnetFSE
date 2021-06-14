@@ -1,0 +1,16 @@
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.csprojAssemblyReference.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.AssemblyInfoInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.AssemblyInfo.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.csproj.CoreCompileInputs.cache
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\CodingTestProject.exe
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\CodingTestProject.deps.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\CodingTestProject.runtimeconfig.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\CodingTestProject.runtimeconfig.dev.json
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\CodingTestProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\ref\CodingTestProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\bin\Debug\net5.0\CodingTestProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\ref\CodingTestProject.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.pdb
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day11\CodingTestProject\obj\Debug\net5.0\CodingTestProject.genruntimeconfig.cache
