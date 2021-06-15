@@ -1,1 +1,6 @@
 Stored Procedure
+
+Scaffold-DbContext "Data source=DESKTOP-1C1EU5R;Integrated security=true;Initial Catalog=pubs" Microsoft.EntityFrameworkCore.SqlServer -o Models -context "PublisherContext"
+
+
+Publisher Name and Title name

@@ -1,0 +1,20 @@
+IP Address
+Domain name -> user friendly name
+DNS -> 
+Rendering -> from a server side script to Client side language
+
+SGML-> XML+HTML
+<html>
+</html> -> element
+Application-> scripts+pages+data
+Client can view Page
+Page -> Imgae+Text+Controls+Audio+video+hyperlinks
+CSS-> Styling
+JavaScript
+DOM
+
+CSS->Internal, External, Inline
+selector{
+property:value;
+property:value;
+}

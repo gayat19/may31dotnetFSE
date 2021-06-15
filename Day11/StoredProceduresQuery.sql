@@ -86,4 +86,8 @@ exec proc_FindAllAuthorBooks 'Cheryl'
 
 select title,concat(au_fname,' ',au_lname) AuthorName,pub_name  from titles join publishers on titles.pub_id=publishers.pub_id  join titleauthor on titles.title_id=titleauthor.title_id  join authors on titleauthor.au_id=authors.au_id  where au_fname='Cheryl'
 
+  create proc proc_GetAllAuthors
+  as
+    select * from authors
+
 
