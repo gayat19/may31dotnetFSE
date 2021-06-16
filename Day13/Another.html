@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Style1.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Full name:</td>
+                <td><input type="text" class="form-control" /></td>
+            </tr>
+            <tr>
+                <td> Age : </td>
+                <td><input type="number" /></td>
+            </tr>
+            <tr>
+                <td> Date of birth : </td>
+                <td><input type="date" /></td>
+            </tr>
+            <tr>
+                <td> Password : </td>
+                <td><input type="password" /></td>
+            </tr>
+            <tr>
+                <td> Address : </td>
+                <td><textarea cols="20" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td> Gender: </td>
+                <td>
+                    <input type="radio" name="rdbGender" />Male
+                    <input type="radio" name="rdbGender" />Female
+                </td>
+            </tr>
+            <tr>
+                <td> Graduation: </td>
+                <td>
+                    <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox" />Under
+                    <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox" />Post
+                </td>
+            </tr>
+            <tr>
+                <td> Position: </td>
+                <td>
+                    <select class="form-select">
+                        <option>Developer</option>
+                        <option>Tester</option>
+                        <option>UI Developer</option>
+                        <option>Team Lead</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input  class="btn btn-primary" type="submit" value="Register" />
+                </td>
+                <td>
+                    <input class="btn btn-danger" type="reset" value="Cancel" />
+                </td>
+            </tr>
+        </table>     
+    </form>
+</body>
+</html>

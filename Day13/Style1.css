@@ -1,0 +1,17 @@
+﻿div {
+    height: 200px;
+    width: 300px;
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+    border-color:greenyellow;
+    border-width:3px;
+    border-style:double;
+   
+}
+
+section {
+    height: 100px;
+    width: 200px;
+    background-color:coral;  
+}

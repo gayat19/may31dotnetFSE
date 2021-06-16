@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script>
+        function myBtnClick() {
+        /* alert("Hello World!!!");*/
+            var num1 = "Hello";
+            var num2 = num1 * 10;
+            alert(num1/2);
+        }
+        function add() {
+            var num1 = parseInt(document.getElementById("txtNum1").value);
+            var num2 = parseInt(document.getElementById("txtNum2").value);
+            var sum = num1 + num2;
+            //alert(sum);
+            //console.log(sum);
+            var resultSc = document.getElementById("resultSection");
+            resultSc.innerHTML = "The sum is " + sum;
+            //console.log(resultSc);
+        }
+    </script>
+    <style>
+        div{
+            width:500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input class="form-control" type="number" id="txtNum1" />
+        <input class="form-control" type="number" id="txtNum2" />
+        <button class="btn btn-success" onclick='add()'>Add</button>
+        <section id="resultSection" class="alert alert-warning" style="width:200px;height:50px">
+
+        </section>
+    </div>
+</body>
+</html>

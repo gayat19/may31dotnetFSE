@@ -1,0 +1,22 @@
+CSS
+Selector 
+  element name - just the name , exaple div,section,h1
+  class- .classname- example .clsShow,.clsLoginDiv
+  id - #idname - example #id1,#txtName
+   
+  box model
+  external
+  inline
+
+HTML
+  Controls
+
+pgae which will take details from customer
+First Name,Last name, Email, Age, PhoneNumber, Address, Gender, Occupation 
+
+JavaScript
+  Internal and external files
+
+
+  
+  
