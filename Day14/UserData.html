@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <script>
+        function validate() {
+            var name = document.getElementById("txtName");
+            if (name.value == "") {
+                alert("Name cannot be empty");
+                name.focus();
+                return;
+            }
+
+            if (document.getElementById("rdbMale").checked == false && document.getElementById("rdbFemale").checked == false) {
+                alert("Please select a gender")
+                document.getElementById("rdbMale").focus();
+                return;
+            }
+            if (document.getElementById("ddlRole").value == "--Select--") {
+                alert("Please select a role");
+                document.getElementById("ddlRole").focus();
+                return;
+            }
+        }
+    </script>
+    <style>
+        div{
+            width:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>You all can do it!!!!!!</h1>
+    <div class="alert alert-success">
+        <label class="form-control">Name</label>
+        <input class="form-control" type="text" id="txtName" />
+        <section class="alert alert-info">
+            <label class="form-control">Gender</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="rdbMale">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="rdbFemale">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                </label>
+            </div>
+        </section>
+       <label class="form-control">Role</label>
+       <select class="form-select" id="ddlRole">
+           <option>--Select--</option>
+           <option>Developer</option>
+           <option>Tester</option>
+           <option>UI Developer</option>
+           <option>Team Lead</option>
+       </select>
+        <button class="btn btn-success" onclick="validate()">Click this</button>
+    </div>
+</body>
+</html>

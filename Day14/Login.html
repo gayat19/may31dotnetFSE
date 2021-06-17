@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="LoginStyle.css" rel="stylesheet" />
+    <script>
+        function login() {
+            users = [
+                {
+                    username: "abc",
+                    password: "123"
+                },
+                {
+                    username: "xyz",
+                    password: "111"
+                },
+                {
+                    username: "efg",
+                    password: "000"
+                }
+            ];
+            var username = document.getElementById("txtUsername");
+            var password = document.getElementById("txtPassword");
+            if (username.value == "" || password.value=="") {
+                alert("Username or password cannot be empty");
+            }
+            var flag = false;
+            for (var i = 0; i < users.length; i++) {
+                if (username.value == users[i].username && password.value == users[i].password) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag) {
+                alert("Welcome " + username.value);
+            }
+            else {
+                alert("Invalid username or password");
+                cancel();
+            }
+               
+        }
+        function cancel() {
+            document.getElementById("txtUsername").value = "";
+            document.getElementById("txtPassword").value = "";
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label class="form-control" for="txtUsername">Username</label>
+        <input class="form-control" type="text" id="txtUsername" />
+        <label class="form-control" for="txtPassword">Password</label>
+        <input class="form-control" type="password" id="txtPassword" />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" onclick="login()">Login</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger" onclick="cancel()">Cancel</button>
+    </div>
+</body>
+</html>

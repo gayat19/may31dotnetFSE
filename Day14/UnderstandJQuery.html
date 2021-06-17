@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="./bootstrap-5.0.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="jQuery_3_6_0.js"></script>
+    <script>
+        $(document).ready(function () {
+            //$('button').click(function () {
+            //    alert("Clciked it, when i said dont...")
+            //})
+            //$('#btn1').click(function () {
+            //    $('#btn2').toggle(1000);
+            //})
+            $("#msgSection").hide();
+            $("#btnLogin").click(function () {
+                users = [
+                    {
+                        username: "abc",
+                        password: "123"
+                    },
+                    {
+                        username: "xyz",
+                        password: "111"
+                    },
+                    {
+                        username: "efg",
+                        password: "000"
+                    }
+                ];
+                if ($("#txtUsername").val() == "" || $("#txtPassword").val() == "") {
+                    alert("Username or password cannot be empty");
+                }
+                var flag = false;
+                for (var i = 0; i < users.length; i++) {
+                    if ($("#txtUsername").val() == users[i].username && $("#txtPassword").val() == users[i].password) {
+                        flag = true;
+                        break;
+                    }
+                }
+                if (flag) {
+                    $("#divLogin").hide(1000);
+                    $("#msgSection").html("Welcome " + $("#txtUsername").val());
+                    $("#msgSection").show(1000);
+                }
+                else {
+                    alert("Invalid username or password");
+                }
+            })
+        })
+    </script>
+    <style>
+        div {
+            width: 400px;
+            height: 200px;
+            position: relative;
+            left: 400px;
+            top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <!--<button id="btn1">Dont click me</button>
+    <button id="btn2">Please dont</button>-->
+    <div id="divLogin">
+        <label class="form-control" for="txtUsername">Username</label>
+        <input class="form-control" type="text" id="txtUsername" />
+        <label class="form-control" for="txtPassword">Password</label>
+        <input class="form-control" type="password" id="txtPassword" />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-success" id="btnLogin">Login</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger" >Cancel</button>
+    </div>
+    <section id="msgSection" class="alert alert-success">
+       
+    </section>
+</body>
+</html>
