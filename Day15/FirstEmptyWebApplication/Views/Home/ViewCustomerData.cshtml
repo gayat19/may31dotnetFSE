@@ -1,0 +1,26 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1 style="background-color:blue">Hello from ViewCustomerData</h1>
+
+   
+@*@for (int i = 0; i < 10; i++)
+{
+    <p>
+        Customer + @i
+    </p>
+}*@
+
+<section>
+    Customer's Name : @ViewData["CustomerName"]
+    <br />
+    Customer's Age : @ViewData["CustomerAge"]
+    <br />
+    Customer's Salary : @ViewData["CustomerSalary"]
+    <br />
+    Customer's Pet : @ViewData["CustomerPet"]
+</section>
+ 
+

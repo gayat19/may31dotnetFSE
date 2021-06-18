@@ -1,0 +1,23 @@
+MVC
+  Empty-> learn how it works
+
+Env-> Development,Production,Testing
+CRUD->POST,GET,PUT,DELETE
+  Add Static files
+  Add Controllers
+  Add Views
+  Add Models
+
+MVC Template
+
+From Controller to view 
+ViewData
+ViewBag
+TempData
+Model
+
+
+Create a controller "Employee" 
+In the index method add employee details like name,age,phone,dateofbirth
+Display those details in the view
+
