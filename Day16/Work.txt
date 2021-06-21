@@ -1,0 +1,18 @@
+MVC
+
+Username 
+Password from the user
+
+Login-> Action methods
+Getting the page
+Submitting the details
+  1) username->abc and password is 123 display welcome
+  2) connect to database and validate the user 
+
+
+Model-> User(username,password)
+
+Model+
+View
+
+-> welcome with the username

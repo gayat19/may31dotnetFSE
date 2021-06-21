@@ -1,0 +1,36 @@
+﻿@model UnserstandingMoreOnMVCProject.Models.User
+<html>
+<head>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        #main {
+            text-align: center;
+        }
+
+        #loginSection {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main" class="alert alert-danger">Login check</h1>
+    <section id="loginSection">
+
+        <form name="user" action="~/User/UserLoginCheck" method="post">
+            @*HTML Helper*@
+            @Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" } )
+            <button class="btn btn-success">Login</button>
+            <input type="reset" value="Cancel" class="btn btn-danger" />
+        </form>
+    </section>
+    <section class="alert alert-danger">
+        @ViewData["ErrorMessage"]
+    </section>
+    <section class="alert alert-success">
+        @ViewData["Success"]
+    </section>
+</body>
+</html>

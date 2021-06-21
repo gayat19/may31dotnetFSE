@@ -1,0 +1,30 @@
+﻿<html>
+    <head>
+        <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+        <style>
+            #main{
+                text-align:center;
+            }
+            #loginSection{
+                width:300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main" class="alert alert-danger">Login Here</h1>
+        <section id="loginSection">
+            @*<form name="user" action="Login" method="post">*@
+                <form name="user" action="~/User/Login" method="post">
+                    <label class="form-control">Username</label>
+                    <input type="text" class="form-control" name="username" required />
+                    <label class="form-control">Password</label>
+                    <input type="password" name="password" class="form-control" required />
+                    <button class="btn btn-success">Login</button>
+                    <input type="reset" value="Cancel" class="btn btn-danger" />
+                </form>
+        </section>
+        <section class="alert alert-danger">
+            @ViewData["Message"]
+        </section>
+    </body>
+</html>

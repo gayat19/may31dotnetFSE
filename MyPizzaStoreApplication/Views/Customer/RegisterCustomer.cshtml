@@ -1,0 +1,31 @@
+﻿@model  MyPizzaStoreApplication.Models.Customer
+
+<html>
+  <head>
+      <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+      <style>
+          div{
+              width:400px;
+          }
+      </style>
+  </head>
+<body>
+    <div class="alert alert-info">
+        @using (Html.BeginForm("RegisterCustomer", "Customer", FormMethod.Post))
+        {
+            @Html.LabelFor(m => m.Email, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+            @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+            @Html.LabelFor(m => m.Address, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Address, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Phone, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Phone, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Age, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Age, new { htmlAttributes = new { @class = "form-control" } })
+            <button class="btn btn-success">Register</button>
+            <button class="btn btn-danger">Cancel</button>
+        }
+    </div>
+</body>
+</html>

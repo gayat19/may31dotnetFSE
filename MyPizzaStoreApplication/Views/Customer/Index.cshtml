@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MyPizzaStoreApplication.Models.Customer>
+
+<html>
+    <head>
+        <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+        <style>
+            div {
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            @foreach (var item in Model)
+            {
+                <p>
+                    Username: @item.Email
+                    <br />
+                    Address:  @item.Address
+                    <br />
+                    Phone    : @item.Phone
+                    <br />
+                    Age       : @item.Age
+                </p>
+            }
+        </div>
+    </body>
+</html>

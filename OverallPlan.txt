@@ -1,0 +1,21 @@
+Pizza Ordering System
+  Login
+  Home 
+    -> List the Pizza available
+    -> Select Pizza for ordering
+    -> Allow customization
+    -> Show SoldOut If not availab;e
+  View Past Orders
+  Cancel Order
+  Add item to Fav
+  Rate the pizza
+  Logout
+
+Admin
+  View Sale from every store
+  Reports
+    Most Ordered pizza
+    Most Preffered store
+    Profit
+  Add Pizzas
+     
