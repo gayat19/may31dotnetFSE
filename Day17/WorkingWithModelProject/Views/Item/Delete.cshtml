@@ -1,0 +1,30 @@
+﻿@model WorkingWithModelProject.Models.Item
+<html>
+<head>
+    <title> Delete an Item</title>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        div {
+            position: absolute;
+            left: 300px;
+            top: 50px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Item Id : @Model.Id
+        <br />
+        Item Name : @Model.Name
+        <br />
+        Item Price : $@Model.Price
+    </div>
+    <section>
+       @using (Html.BeginForm("Delete", "Item", FormMethod.Post)) { 
+           <p class="alert alert-info">Are you sure you want to delet this item???</p> 
+           <button class="btn btn-danger">Delete</button>
+        }
+    </section>
+</body>
+</html>

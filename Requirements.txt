@@ -1,0 +1,7 @@
+Application should not crash
+The data that has been entered should be stored
+The UI should be lookable
+The Application should use EF, MVC, Web API
+
+
+

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WorkingWithModelProject.Models.Item>
+
+<html>
+<head>
+    <title> Item List</title>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="accordion-item">
+        <ul>
+            @foreach (var item in Model)
+            {
+            @*<li>@item.Id &nbsp; @item.Name &nbsp; @item.Price </li>*@
+            <li>
+                @item.Name
+                @Html.ActionLink("View Details", "Details", "Item", new { Id = item.Id })
+                (or)
+                @Html.ActionLink("Update Item", "Edit", "Item", new { Id = item.Id })
+                (or)
+                @Html.ActionLink("Delete Item", "Delete", "Item", new { Id = item.Id })
+            </li>
+            }
+        </ul>
+    </div>
+    <section>
+        @Html.ActionLink("Create New Item","Create")
+    </section>
+</body>
+</html>

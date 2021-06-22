@@ -1,0 +1,30 @@
+﻿@model WorkingWithModelProject.Models.Item
+<html>
+<head>
+    <title> Edit an Item</title>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        div {
+            position: absolute;
+            left: 300px;
+            top: 50px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Edit", "Item", FormMethod.Post))
+        {
+            @Html.LabelFor(m => m.Id, htmlAttributes: new { @class = "form-control" })
+            @Html.DisplayFor(m => m.Id);
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Price, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Price, new { htmlAttributes = new { @class = "form-control" } })
+            <button class="btn btn-primary">Update Item</button>
+            <button class="btn btn-warning">Reset</button>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@model WorkingWithModelProject.Models.Item
+<html>
+<head>
+    <title> Details</title>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <style>
+        div {
+            position: absolute;
+            left: 300px;
+            top: 50px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Item Id : @Model.Id
+        <br />
+        Item Name : @Model.Name
+        <br />
+        Item Price : $@Model.Price
+    </div>
+    <section>
+        @Html.ActionLink("Back to list", "Index")
+    </section>
+</body>
+</html>
