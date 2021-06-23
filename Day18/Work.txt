@@ -1,0 +1,23 @@
+Pizza-Model
+PizzaController
+Index of the pizzas
+
+
+Employee
+  Id
+  Name
+  Age
+  DepartmentID
+  Department
+Department
+  Id
+  Name
+  Employee collection
+
+
+appsetting -> add the connection string
+install Microsoft.Extensions.Configuration; -> NuGet pacakage
+using Microsoft.Extensions.Configuration;
+In the startup -> configure the dbcontext
+
+ services.AddDbContext<CompanyContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:companyCon"]));

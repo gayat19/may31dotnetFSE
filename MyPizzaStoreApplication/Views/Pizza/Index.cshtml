@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MyPizzaStoreApplication.Models.Pizza>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <title>Index</title>
+    <style>
+        div{
+            float:left;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="accordion-header">
+        Welcome to MyPizza strore...
+    </h1>
+    <h2 class="alert-dismissible ">
+        Select the pizza that you want
+    </h2>
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 18rem;">
+            <img src=@(item.Pic) class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@item.Name</h5>
+                <p class="card-text">Crust type &nbsp; @item.Crust<br />@Html.DisplayFor(m=>item.IsVeg) Is Veg </p>
+                <a href="#" class="btn btn-primary">Buy for $@item.Price</a>
+            </div>
+        </div>
+    }
+</body>
+</html>
