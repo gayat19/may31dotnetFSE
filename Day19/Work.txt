@@ -1,0 +1,21 @@
+Passing data from controller to view
+Viewdata
+ViewBag
+TempData-> passing data from view to view through the action method
+
+ViewModel
+
+Employee
+  id,name,age,department_id,password
+Department
+  id,name
+User-> dont want in the database
+  username,password,role
+
+ViewData vs ViewBag
+Dic   - dynamic
+Casted - datatype is dynamic
+Faster - a bit slow
+
+ViewModel
+DropDownList
