@@ -1,32 +1,14 @@
 ﻿@*@model UnderstandingDataTransferInMVCProject.Models.Employee*@
 @model UnderstandingDataTransferInMVCProject.Models.EmployeeViewModel
 
+
 @{
-    Layout = null;
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
-    <title>Register</title>
-    <style>
-        form {
-            width: 300px;
-        }
-    </style>
-    <script>
-        function passwordCheck() {
-            var pass = document.getElementById("Password").value;
-            var repass = document.getElementById("txtReType").value;
-            if (pass != repass)
-                alert("Password Mismatch");
-        }
-    </script>
-</head>
-<body>
 
     <h4>Employee</h4>
     <hr />
@@ -36,14 +18,17 @@
             {
                 @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "form-control" })
                 @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
-                @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.UserPassword, htmlAttributes: new { @class = "form-control" })
+                @Html.PasswordFor(m => m.UserPassword, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.RetypePassord, "", new { @class = "text-danger" })
 
                 @*<label class="form-control">@ViewBag.RetypePassword</label>
-            <input type="password" value=@ViewBag.RetypePassword class="form-control" id="txtReType" onblur="passwordCheck()" />*@
+                    <input type="password" value=@ViewBag.RetypePassword class="form-control" id="txtReType" onblur="passwordCheck()" />*@
 
                 @Html.LabelFor(m => m.RetypePassord, htmlAttributes: new { @class = "form-control" })
                 @Html.PasswordFor(m => m.RetypePassord, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.RetypePassord, "", new { @class = "text-danger" })
 
                 @Html.LabelFor(m => m.Age, htmlAttributes: new { @class = "form-control" })
                 @Html.EditorFor(m => m.Age, new { htmlAttributes = new { @class = "form-control" } })
@@ -60,9 +45,3 @@
     <div>
         <a asp-action="Index">Back to List</a>
     </div>
-
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
-</body>
-</html>

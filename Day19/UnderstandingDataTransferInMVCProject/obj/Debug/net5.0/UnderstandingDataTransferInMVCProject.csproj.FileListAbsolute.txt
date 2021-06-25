@@ -140,3 +140,5 @@ D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day19\UnderstandingData
 D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day19\UnderstandingDataTransferInMVCProject\obj\Debug\net5.0\UnderstandingDataTransferInMVCProject.RazorTargetAssemblyInfo.cs
 D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day19\UnderstandingDataTransferInMVCProject\obj\Debug\net5.0\UnderstandingDataTransferInMVCProject.Views.pdb
 D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day19\UnderstandingDataTransferInMVCProject\obj\Debug\net5.0\Razor\Views\User\Login.cshtml.g.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day19\UnderstandingDataTransferInMVCProject\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day19\UnderstandingDataTransferInMVCProject\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs

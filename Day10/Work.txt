@@ -47,5 +47,7 @@ Scaffold-DbContext "Data source=DESKTOP-1C1EU5R;Integrated security=true;Initial
 
 Scaffold-DbContext "Server=localhost;database=TestDb;uid=root;pwd=Password;" Pomelo.EntityFrameworkCore.MySql -OutputDir Models -f
 
+dotnet ef dbcontext scaffold -connection "Server=localhost;Database=dbCompany;User=root;Password=Password;TreatTinyAsBoolean=true;" "Pomelo.EntityFrameworkCore.MySql"
+
 dotnet ef dbcontext scaffold "Server=localhost;Database=dbCompany;User=root;Password=Password;TreatTinyAsBoolean=true;" "Pomelo.EntityFrameworkCore.MySql"
   

@@ -1,45 +1,31 @@
 ﻿@model UnderstandingDataTransferInMVCProject.Models.User
 
+
 @{
-    Layout = null;
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
-    <title>Login</title>
-    <style>
-        form {
-            width: 300px;
-        }
-    </style>
-</head>
-<body>
-
-<h4>User</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        @using (Html.BeginForm("Login", "User", FormMethod.Post))
-        {
-            @Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
-            @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
-            @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
-            <button class="btn btn-success">Login</button>
-        }
+    <h4>User</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            @using (Html.BeginForm("Login", "User", FormMethod.Post))
+            {
+                @Html.LabelFor(m => m.Username, htmlAttributes: new { @class = "form-control" })
+                @Html.EditorFor(m => m.Username, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                @Html.LabelFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+                @Html.PasswordFor(m => m.Password, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                <button class="btn btn-success">Login</button>
+            }
+        </div>
     </div>
-</div>
-
-<div>
-    @ViewBag.Message
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
-</body>
-</html>
+    <div>
+        @Html.ActionLink("Not registered?? Click here to register", "Register", "User")
+    </div>
+    <div>
+        @ViewBag.Message
+    </div>

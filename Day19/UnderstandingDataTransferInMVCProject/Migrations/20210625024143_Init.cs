@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace UnderstandingDataTransferInMVCProject.Migrations
 {
@@ -27,7 +28,9 @@ namespace UnderstandingDataTransferInMVCProject.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Age = table.Column<int>(type: "int", nullable: false),
-                    Department_Id = table.Column<int>(type: "int", nullable: false)
+                    Department_Id = table.Column<int>(type: "int", nullable: false),
+                    Password = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
+                    PasswordSalt = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -47,8 +50,8 @@ namespace UnderstandingDataTransferInMVCProject.Migrations
 
             migrationBuilder.InsertData(
                 table: "Employees",
-                columns: new[] { "Id", "Age", "Department_Id", "Name" },
-                values: new object[] { 1, 24, 101, "ABC" });
+                columns: new[] { "Id", "Age", "Department_Id", "Name", "Password", "PasswordSalt" },
+                values: new object[] { 1, 24, 101, "ABC", null, null });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Employees_Department_Id",
