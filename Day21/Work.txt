@@ -1,0 +1,11 @@
+Logging
+Service 
+  AddSingleton-only a single instance of teh class will exist
+  AddScoped - An object for each client
+  AddTransient - An object for every call of method - when u have async or thread involved
+
+
+https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-5.0
+
+Partial Views
+Error
