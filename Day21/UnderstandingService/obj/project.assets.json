@@ -11,6 +11,18 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "log4net/2.0.12": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -506,6 +518,19 @@
           "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Primitives": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -516,6 +541,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyInjection/5.0.1": {
@@ -561,6 +598,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Log4Net.AspNetCore/5.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "5.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
+          "Microsoft.Extensions.Logging": "5.0.0",
+          "log4net": "2.0.12"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll": {}
         }
       },
       "Microsoft.Extensions.Options/5.0.0": {
@@ -1123,7 +1176,7 @@
           "System.Security.Permissions": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
@@ -1682,7 +1735,7 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Security.AccessControl.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.AccessControl.dll": {}
@@ -1749,7 +1802,7 @@
           "System.Windows.Extensions": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Security.Permissions.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Security.Permissions.dll": {}
@@ -1758,7 +1811,7 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Security.Principal.Windows.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
@@ -1901,7 +1954,7 @@
           "System.Drawing.Common": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/System.Windows.Extensions.dll": {}
         },
         "runtime": {
           "lib/netcoreapp3.0/System.Windows.Extensions.dll": {}
@@ -2028,6 +2081,34 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "log4net/2.0.12": {
+      "sha512": "9P67BCftJ7KG+B7rNOM1A9KczUwyEDed6zbAddy5Cj/73xVkzi+rEAHeOgUnW5wDqy1JFlY8+oTP0m1PgJ03Tg==",
+      "type": "package",
+      "path": "log4net/2.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/log4net.dll",
+        "lib/net20/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35/log4net.dll",
+        "lib/net35/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40/log4net.dll",
+        "lib/net40/log4net.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "lib/netstandard1.3/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.2.0.12.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -2702,6 +2783,26 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.Configuration/5.0.0": {
+      "sha512": "LN322qEKHjuVEhhXueTUe7RNePooZmS8aGid5aK2woX3NPjSnONFyKUc6+JknOS6ce6h2tCLfKPTBXE3mN/6Ag==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
       "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
       "type": "package",
@@ -2718,6 +2819,26 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/5.0.0": {
+      "sha512": "Of1Irt1+NzWO+yEYkuDh5TpT4On7LKl98Q9iLqCdOZps6XXEWDj3AKtmyvzJPVXZe4apmkJJIiDL7rR1yC+hjQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2806,6 +2927,27 @@
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Log4Net.AspNetCore/5.0.3": {
+      "sha512": "y8XbJ8W0YxoyPjc7fnJiJc6NOtcxdnHpvjwesbiV/+Cy6LHKGN5X6lxkxhK6sxzt9IXwUvg15Am62czLuJT+oQ==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.log4net.aspnetcore/5.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net5.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netcoreapp1.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netcoreapp2.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netcoreapp2.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netcoreapp2.2/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netcoreapp3.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll",
+        "microsoft.extensions.logging.log4net.aspnetcore.5.0.3.nupkg.sha512",
+        "microsoft.extensions.logging.log4net.aspnetcore.nuspec"
       ]
     },
     "Microsoft.Extensions.Options/5.0.0": {
@@ -7144,7 +7286,9 @@
     "net5.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.7",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.Extensions.Logging.Log4Net.AspNetCore >= 5.0.3",
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "log4net >= 2.0.12"
     ]
   },
   "packageFolders": {
@@ -7201,9 +7345,17 @@
             "target": "Package",
             "version": "[5.0.7, )"
           },
+          "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+            "target": "Package",
+            "version": "[5.0.3, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.12, )"
           }
         },
         "imports": [

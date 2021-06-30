@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MyPizzaStoreApplication.Models;
+using MyPizzaStoreApplication.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,28 +12,19 @@ namespace MyPizzaStoreApplication.Controllers
 {
     public class PizzaController : Controller
     {
-        static List<Pizza> pizzas = new List<Pizza>()
+        private readonly ILogger<PizzaContext> _logger;
+        private readonly IRepo<Pizza, int> _repo;
+
+        public PizzaController(IRepo<Pizza,int> repo,ILogger<PizzaContext> logger)
         {
-            new Pizza(){ 
-                Id=101,
-                Name = "Margherita",
-                IsVeg=true,
-                Crust="Wheat Thin",
-                Price = 12,
-                Pic="/images/Pic1.jpg"
-            },
-            new Pizza(){
-                Id=102,
-                Name = "Mexican Green Wave",
-                IsVeg=true,
-                Crust="Cheezee",
-                Price = 24,
-                Pic="/images/Pic2.jpg"
-            }
-        };
+            _logger = logger;
+            _repo = repo;
+        }
+        
         // GET: PizzaController
         public ActionResult Index()
         {
+            var pizzas = _repo.GetAll();
             return View(pizzas);
         }
 

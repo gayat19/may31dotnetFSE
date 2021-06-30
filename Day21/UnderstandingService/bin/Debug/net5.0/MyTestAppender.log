@@ -1,0 +1,5 @@
+﻿2021-06-29 09:33:16,796 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Application started. Press Ctrl+C to shut down.
+2021-06-29 09:33:16,989 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Hosting environment: Production
+2021-06-29 09:33:16,995 INFO [1] Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted - Content root path: D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\Day21\UnderstandingService
+2021-06-29 09:33:17,305 ERROR [10] UnderstandingService.Controllers.HomeController.Index - Dinominator is 0 29-06-2021 09:33:17
+2021-06-29 09:33:36,432 INFO [4] UnderstandingService.Services.ProductRepo.Add - Procduct added

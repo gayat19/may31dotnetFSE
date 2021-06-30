@@ -54,9 +54,17 @@
               "target": "Package",
               "version": "[5.0.7, )"
             },
+            "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "log4net": {
+              "target": "Package",
+              "version": "[2.0.12, )"
             }
           },
           "imports": [

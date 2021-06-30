@@ -25,7 +25,7 @@ namespace UnderstandingService.Controllers
             if(products == null)
             {
                 ViewBag.Message = "No products available";
-                return View();
+                return RedirectToAction("Create");
             }
             return View(products);
         }
