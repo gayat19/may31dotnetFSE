@@ -34,7 +34,6 @@ namespace MyPizzaStoreApplication.Services
 
         public Pizza Get(int k)
         {
-            
             try
             {
                 var pizza = _context.Pizzas.Single(p => p.Id == k);
@@ -50,6 +49,37 @@ namespace MyPizzaStoreApplication.Services
         public ICollection<Pizza> GetAll()
         {
             return _context.Pizzas.ToList();
+        }
+
+        public Pizza Update(int k, Pizza t)
+        {
+            try
+            {
+                var pizza = Get(k);
+                _context.Update(t);
+                _context.SaveChanges();
+                return pizza;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Unable to update the pizza details" + k + " " + e.Message);
+            }
+            return null;
+        }
+        public Pizza Delete(int k)
+        {
+            try
+            {
+                var pizza = Get(k);
+                _context.Pizzas.Remove(pizza);
+                _context.SaveChanges();
+                return pizza;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Unable to delete the pizza details" + k + " " + e.Message);
+            }
+            return null;
         }
     }
 }

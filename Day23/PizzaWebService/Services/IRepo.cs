@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MyPizzaStoreApplication.Services
+namespace PizzaWebService.Services
 {
-    public interface IRepo<T,K>
+    public interface IRepo<T, K>
     {
         ICollection<T> GetAll();
         T Get(K k);
@@ -13,6 +13,5 @@ namespace MyPizzaStoreApplication.Services
         T Update(K k, T t);
 
         T Delete(K k);
-
     }
 }

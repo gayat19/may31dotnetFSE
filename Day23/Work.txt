@@ -1,0 +1,23 @@
+https://www.c-sharpcorner.com/UploadFile/bd5be5/design-patterns-in-net/
+
+Web API - framework
+to build http service
+protocol-> http
+access from any client
+standard
+RESTful Service
+POST -> Create
+GET -> Read
+PUT-> Update
+DELETE-> delete
+
+
+1) RESTful service
+2) maps to http verbs-> GET,PUT,POST and DELETE
+3) resquest and response pipelines 
+4) Supports teh HTTPCLient for inter api communication in other wods can call one API from another
+5) Host -> IIS, Web Server, SelfHosting
+6) Gives data as JSON, XML or BSON
+
+Http status codes
+https://httpstatuses.com/
