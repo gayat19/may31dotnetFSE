@@ -143,3 +143,6 @@ D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication
 D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication\obj\Debug\net5.0\Razor\Views\Pizza\Create.cshtml.g.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication\obj\Debug\net5.0\Razor\Views\Pizza\Details.cshtml.g.cs
+D:\Data\d drive\Corp\Srushti\Collabra\May31\Participants\MyPizzaStoreApplication\obj\Debug\net5.0\Razor\Views\Pizza\Edit.cshtml.g.cs

@@ -1,0 +1,34 @@
+﻿@model MyPizzaStoreApplication.Models.Pizza
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+    <div>
+        <h4>Pizza</h4>
+        <hr />
+        <div class="card" style="width: 18rem;">
+            <img src=@(Model.Pic) class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">Crust type &nbsp; @Model.Crust<br />@Html.DisplayFor(m => Model.IsVeg) Is Veg </p>
+                <a href="#" class="btn btn-primary">Buy for $@Model.Price</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>

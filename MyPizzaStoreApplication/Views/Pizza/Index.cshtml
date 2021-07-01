@@ -22,19 +22,23 @@
     <h1 class="accordion-header">
         Welcome to MyPizza strore...
     </h1>
+    <section>
+        @Html.ActionLink("Add Pizza", "Create", "Pizza")
+    </section>
     <h2 class="alert-dismissible ">
         Select the pizza that you want
     </h2>
     @foreach (var item in Model)
     {
-        <div class="card" style="width: 18rem;">
-            <img src=@(item.Pic) class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">@item.Name</h5>
-                <p class="card-text">Crust type &nbsp; @item.Crust<br />@Html.DisplayFor(m=>item.IsVeg) Is Veg </p>
-                <a href="#" class="btn btn-primary">Buy for $@item.Price</a>
-            </div>
-        </div>
+<div>
+    @Html.DisplayFor(m => item.Name, new { htmlAttribute = new { @class = "alert alert-info" } })
+    @Html.ActionLink("View More", "Details", "Pizza", new { Id = item.Id })
+    @Html.ActionLink("Edit Pizza details", "Edit", "Pizza", new { Id = item.Id })
+    <hr />
+    <br />
+
+</div>
     }
+
 </body>
 </html>

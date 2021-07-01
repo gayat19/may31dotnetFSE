@@ -8,11 +8,11 @@ namespace MyPizzaStoreApplication.Services
     public interface IRepo<T,K>
     {
         public Task<ICollection<T>> GetAll();
-        T Get(K k);
-        K Add(T t);
-        T Update(K k, T t);
+        Task<T> Get(K k);
+        Task<K> Add(T t);
+        Task<T> Update(K k, T t);
 
-        T Delete(K k);
+        Task<T> Delete(K k);
 
     }
 }

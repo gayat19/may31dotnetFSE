@@ -1,0 +1,49 @@
+﻿@model MyPizzaStoreApplication.Models.Pizza
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <title>Create</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<h4>Pizza</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @using (Html.BeginForm("Create", "Pizza", FormMethod.Post))
+        {
+            @Html.LabelFor(m => m.Name, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Name, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.IsVeg, htmlAttributes: new { @class = "form-control" })
+            @Html.CheckBoxFor(m=>m.IsVeg)
+            @Html.LabelFor(m => m.Crust, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Crust, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Price, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Price, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.LabelFor(m => m.Pic, htmlAttributes: new { @class = "form-control" })
+            @Html.EditorFor(m => m.Pic, new { htmlAttributes = new { @class = "form-control" } })
+            <input type="submit" value="Add Pizza" class="btn btn-primary" />
+        }
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

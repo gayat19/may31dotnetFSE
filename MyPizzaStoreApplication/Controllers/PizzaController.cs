@@ -29,8 +29,17 @@ namespace MyPizzaStoreApplication.Controllers
         }
 
         // GET: PizzaController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Details(int id)
         {
+            try
+            {
+                Pizza pizza = await _repo.Get(id);
+                return View(pizza);
+            }
+            catch
+            {
+                _logger.LogError("Uable to get the edit");
+            }
             return View();
         }
 
@@ -43,37 +52,57 @@ namespace MyPizzaStoreApplication.Controllers
         // POST: PizzaController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<ActionResult> Create(Pizza pizza)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                if(ModelState.IsValid)
+                {
+                    int id = await _repo.Add(pizza);
+                    if (id != -1)
+                        return RedirectToAction("Index");
+                }
             }
             catch
             {
                 return View();
             }
+            return View();
         }
 
         // GET: PizzaController/Edit/5
-        public ActionResult Edit(int id)
+        public async Task<ActionResult> Edit(int id)
         {
+
+            try
+            {
+                Pizza pizza = await _repo.Get(id);
+                return View(pizza);
+            }
+            catch
+            {
+                _logger.LogError("Uable to get the edit");
+            }
             return View();
+
         }
 
         // POST: PizzaController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public async Task<ActionResult> Edit(int id, Pizza pizza)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                Pizza myPizza = await _repo.Update(id, pizza);
+                if (myPizza != null)
+                    return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                return View("Edit",pizza);
             }
+            return View("Edit", pizza);
         }
 
         // GET: PizzaController/Delete/5

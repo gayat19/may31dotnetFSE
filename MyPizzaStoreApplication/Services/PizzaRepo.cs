@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace MyPizzaStoreApplication.Services
@@ -19,33 +20,67 @@ namespace MyPizzaStoreApplication.Services
             _context = context;
             _logger = logger;
         }
-        public int Add(Pizza t)
+        public async Task<int> Add(Pizza t)
         {
+            //try
+            //{
+            //    _context.Add(t);
+            //    _context.SaveChanges();
+            //    return t.Id;
+            // }
+            //catch (Exception e)
+            //{
+            //    _logger.LogError("Unable to add pizza " + e.Message);
+            //}
+            //return -1;
+
             try
             {
-                _context.Add(t);
-                _context.SaveChanges();
-                return t.Id;
-             }
+                Pizza pizza = new Pizza();
+                using (var httpClient = new HttpClient()) 
+                {
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(t), Encoding.UTF8, "application/json");
+                    using (var response = await httpClient.PostAsync("http://localhost:34661/api/Pizza", content))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            pizza = JsonConvert.DeserializeObject<Pizza>(apiResponse);
+                            return pizza.Id;
+                        }
+                    }
+                }
+            }
             catch (Exception e)
             {
-                _logger.LogError("Unable to add pizza " + e.Message);
+                _logger.LogError("Unable to retrive pizza from API " + e.Message);
             }
             return -1;
         }
 
-        public Pizza Get(int k)
+        public async Task<Pizza> Get(int k)
         {
             try
             {
-                var pizza = _context.Pizzas.Single(p => p.Id == k);
-                return pizza;
+                Pizza pizza = new Pizza();
+                using (var httpClient = new HttpClient())
+                {
+                    using (var response = await httpClient.GetAsync("http://localhost:34661/api/Pizza/" + k)) 
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            pizza = JsonConvert.DeserializeObject<Pizza>(apiResponse);
+                            return pizza;
+                        }
+                    }
+                }
             }
             catch (Exception e)
             {
-                _logger.LogError("No pizza with this id "+k+" " + e.Message);
+                _logger.LogError("Unable to retrive pizza from API " + e.Message);
             }
-            return null ;
+            return null;
         }
 
         public async Task<ICollection<Pizza>> GetAll()
@@ -74,33 +109,52 @@ namespace MyPizzaStoreApplication.Services
             return null;
         }
 
-        public Pizza Update(int k, Pizza t)
+        public async Task<Pizza> Update(int k, Pizza t)
         {
             try
             {
-                var pizza = Get(k);
-                _context.Update(t);
-                _context.SaveChanges();
-                return pizza;
+                Pizza pizza = new Pizza();
+                using (var httpClient = new HttpClient())
+                {
+                    StringContent content = new StringContent(JsonConvert.SerializeObject(t), Encoding.UTF8, "application/json");
+                    using (var response = await httpClient.PutAsync("http://localhost:34661/api/Pizza/" + k,content))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            pizza = JsonConvert.DeserializeObject<Pizza>(apiResponse);
+                            return pizza;
+                        }
+                    }
+                }
             }
             catch (Exception e)
             {
-                _logger.LogError("Unable to update the pizza details" + k + " " + e.Message);
+                _logger.LogError("Unable to retrive pizza from API " + e.Message);
             }
             return null;
-        }
-        public Pizza Delete(int k)
+         }
+        public async Task<Pizza> Delete(int k)
         {
             try
             {
-                var pizza = Get(k);
-                _context.Pizzas.Remove(pizza);
-                _context.SaveChanges();
-                return pizza;
+                Pizza pizza = new Pizza();
+                using (var httpClient = new HttpClient())
+                {
+                    using (var response = await httpClient.DeleteAsync("http://localhost:34661/api/Pizza/" + k))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            pizza = JsonConvert.DeserializeObject<Pizza>(apiResponse);
+                            return pizza;
+                        }
+                    }
+                }
             }
             catch (Exception e)
             {
-                _logger.LogError("Unable to delete the pizza details" + k + " " + e.Message);
+                _logger.LogError("Unable to retrive pizza from API " + e.Message);
             }
             return null;
         }
