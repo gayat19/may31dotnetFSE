@@ -7,7 +7,7 @@ namespace MyPizzaStoreApplication.Services
 {
     public interface IRepo<T,K>
     {
-        ICollection<T> GetAll();
+        public Task<ICollection<T>> GetAll();
         T Get(K k);
         K Add(T t);
         T Update(K k, T t);

@@ -1,0 +1,32 @@
+Web API-> few topics
+Azure
+  SQL
+  Blob
+
+Docker+Kubernetes-> theory+ some practical demo
+
+Work on the project 
+   Presentation
+   Demo
+   Questions on ur project
+   Questions on basic technology
+
+Mock sessions
+
+MVC
+  Controllers
+  Models
+  Views
+  Services
+    Repo
+    OtherServices
+	Call to WebAPI
+Web APIs
+  Controllers
+  Models
+  Services
+  
+Database
+  Azure - final
+  
+   

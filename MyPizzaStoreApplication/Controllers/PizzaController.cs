@@ -22,9 +22,9 @@ namespace MyPizzaStoreApplication.Controllers
         }
         
         // GET: PizzaController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            var pizzas = _repo.GetAll();
+            var pizzas = await _repo.GetAll();
             return View(pizzas);
         }
 

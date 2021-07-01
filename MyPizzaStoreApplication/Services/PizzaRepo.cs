@@ -1,8 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using MyPizzaStoreApplication.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace MyPizzaStoreApplication.Services
@@ -46,9 +48,30 @@ namespace MyPizzaStoreApplication.Services
             return null ;
         }
 
-        public ICollection<Pizza> GetAll()
+        public async Task<ICollection<Pizza>> GetAll()
         {
-            return _context.Pizzas.ToList();
+            //return _context.Pizzas.ToList();
+            try
+            {
+                List<Pizza> pizzas = new List<Pizza>();
+                using (var httpClient = new HttpClient())
+                {
+                    using (var response = await httpClient.GetAsync("http://localhost:34661/api/Pizza"))
+                    {
+                        if (response.IsSuccessStatusCode)
+                        {
+                            string apiResponse = await response.Content.ReadAsStringAsync();
+                            pizzas = JsonConvert.DeserializeObject<List<Pizza>>(apiResponse);
+                            return pizzas;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                _logger.LogError("Unable to retrive pizza from API " + e.Message);
+            }
+            return null;
         }
 
         public Pizza Update(int k, Pizza t)
