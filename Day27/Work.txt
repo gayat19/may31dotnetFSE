@@ -1,0 +1,132 @@
+Azure AD
+   IAM -> Identity and Access Management -> All microsoft products
+O365,VS EE, SharePoint
+
+Scalability -> Vertical and Horizontal
+Vertical -> adding resource to the exsisting system scale-up and down -> agility
+Horizontal -> More systems - > scale-out and in
+elasticity -> scaleout and in automatically
+
+
+Containerize my appilication
+Auto manage their elasticity and agility - orchestration
+
+Create a RG-> Give a name and create
+Container register ink -> deploycr.azurecr.io
+username -> deploycr
+password -> 5QmESheInkiSBYwKVapgHm/xtgtfw9Kz
+Service connection name -> sn1
+
+
+
+Container registry
+Create a container registry
+Wait until u can go to resource
+In Access Keys -> Enable admin user -> note username and password
+
+
+
+
+
+Create a new application that has a dockerfile for dockerizing it
+
+
+Creating and pushing the container to the Container registry
+Deploy the application in DevOps stater(Bring ur own code in Azure CI/CD)
+Build Pipeline -> click on edit pipeline
+Click on the pipeline on the top(above the get resources)
+in the Agent Specification choose Ubuntu(choice of ur version above 16)
+In the publish job ensure u uncheck the zip published project coz we are going to containerize it and not zip and archive it
+Clcik on the + in Agent to add another job to the pipeline
+search and add docker -> you will get a build and push job
+Create a new service connection Azure COntainer registry and give a name 
+by clicking the +
+Service connection name -> sn1
+Add the lastestin the tags to identify which image to pull
+Save and queue for the repo to be created and to be pushed in the container registry
+
+
+Creating a AKS
+Choose Azure Kubernetes
+Give aresource gropu that u have created(deployRG)
+give the cluster a name -> deploykc
+create
+
+Kubernetes -> AZure KS/Google KS/IBM Container service
+Kubernetes+Docker+Mesosphere DC/OS -> initially 
+Later they have their own way of management
+Cluster-> Collection of Nodes
+Nodes-> Worker Node/Master Node
+Master Node-> Manages teh worker nodes
+	Exposes the end points
+ 	Manages teh schedules
+ In Azure the master is managed by Microsoft
+Worker Node-> Collection of Pods
+Pod -> one or more containers 
+
+Hosting solution will be optimized(automatic horizontal and vertical scaling will be done)
+Fault tolerance-> the ability to remain up and running during component and service failures
+Kubernetes ->Self-Healing -> if one node goes down/fails the infra will automatically heal it
+Auto Replacement-> when a pod goes down an alternate pod is spinned up to replace it
+
+
+when the demand is more -> more replicas are spinned up to cater the need
+
+Generating the secret Key
+In azure shell prompt
+Add a storage account
+az aks get-credentials --resource-group deployRG --name deploykc
+
+kubectl create secret docker-registry dsconfigsn --docker-server=deploycr.azurecr.io --docker-username=deploycr --docker-password=5QmESheInkiSBYwKVapgHm/xtgtfw9Kz --docker-email=Gayathri30June21@outlook.com
+
+
+Edit the release pipeline
+Edit release pipeline
+Disable both the task in the job(coz we dont need the release in web anymore. We are releasing it to the AKS)
+Add a kubectl task
+in teh kubectl
+  add the connection with the subscription
+   choose the cluster name we created(deploykc)
+  give teh connection a name (sn2)
+  choose the create command
+  
+  Select teh configuration
+  coose teh yaml file for configuration
+Save and release
+----------------------------------
+Resource  group - deployRG
+Container register ink -> deploycr.azurecr.io
+username -> deploycr
+password -> 5QmESheInkiSBYwKVapgHm/xtgtfw9Kz
+Container repo's name : deployrepo
+Till Docker GitHubCommit ID - f9cff60951e3b8048f793c7e0cfb37ada5abd147
+Kubernetes Cluster name - deploykc
+secret file name:  dsconfigsn
+Yaml file commit ID  - e66dbba1d207b8b45052e7481e67a3779c8898b4
+kubectle add connection name -> sn2
+-------------------------------------------------
+To browse the AKS
+az aks get-credentials --resource-group deployRG --name deploykc
+kubectl create serviceaccount dashboard-admin-sa
+kubectl create clusterrolebinding dashboard-admin-sa --clusterrole=cluster-admin --serviceaccount=default:dahboard-admin-sa
+kubectl get secrets
+kubectl describe secret dashboard-admin-sa-token-llsrr
+(Received token - 
+ eyJhbGciOiJSUzI1NiIsImtpZCI6ImQxT1NVNTgwenBteGJOYzVreWJLNGRSVThPY2R0WmIxVWhCMUZFYlhydnMifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRhc2hib2FyZC1hZG1pbi1zYS10b2tlbi1sbHNyciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJkYXNoYm9hcmQtYWRtaW4tc2EiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIzMWFkMGI2ZC03ZTBhLTQ1ODItOTZlNS01ODkwNWEwZTVlNDgiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpkYXNoYm9hcmQtYWRtaW4tc2EifQ.KIJhbVU8HNHdExDDw8k8Fbnb9ekPyPz1Us-gYWT5Nj9ta5HABgMs2E7kDlp2WF9Z_dzMPDwt1zhXaSgbxVI_I60XDXtCynGehoXr0KKlAqEMzCX3LkYclxRn3qaN6NXD0ois-vX2bJaQVod6SCbgD87ImE4XK26FgM6HlFV3M5G_N8vLZ45fAw25WYmSIG-t0Lh71EUMSO4rMata_3DSu0gCfkNQrq2Q4TkCBn1DYDx0fVMFWzkP0slRC86gvbusEicsynBX_9mT_ZH6a4k8NbeJ7G1u1bgwLg_59K9D7ZwFlNXOb3S41a4B0zXdvS3hukrTBPFhX3HiqAPmbYWQcsGu0flmVcIm9GxCr45ZSo2h70YaN_9g9DWgP_J7EATn-gBAjCU-JkJx1OcZDNzttAdoThkxHUWiF_1IJnCjnh-ceDUdUqu_vZJ50rBHuV984WzcnroJiCUBHcq_TFhfd7O3qm7cjYSupO57uSjEQtaCbIsYdiUF1InjBqaxHBqQkarEsoCIIK_Tp0OR4lhDRPOpDVF2Xnp41kBaJtycDbwmktB6YQJZVhiudR647AcgYzAj_2k8-P79L2MESd75ZrTy0NVr5bZT58NA9avHvZtRxfQKH_I7zbCm0K3Y8hZg_gdDVGyv0u_YA-JbYNBG4t5swYZ1A9wAmmCMJ93Yqow)
+
+az aks browse --resource-group deployRG --name deploykc
+
+
+az aks disable-addons -g deployRG -n deploykc -a kube-dashboard
+
+az aks enable-addons -g deployRG -n deploykc -a kube-dashboard
+
+
+
+
+   
+
+
+
+
+

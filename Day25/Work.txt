@@ -1,0 +1,13 @@
+Resource group
+  Database
+  Deploying the project
+  Container
+  Faas 
+  
+
+Server name : g3dbserver
+username : gayathri
+password P@ssw0rd
+
+
+Server=tcp:g3dbserver.database.windows.net,1433;Initial Catalog=G3SqlServer;Persist Security Info=False;User ID=gayathri;Password=P@ssw0rd;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

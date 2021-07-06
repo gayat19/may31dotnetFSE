@@ -1,0 +1,8 @@
+DevOps- Method
+Development -> Developer-> Coding + UnitTesting + Integration Testing
+Testing -> Funtional Testing+ System Testing-> Installation and uninstallation test-> Load Test-> Stress Test->Usability Test->UAT-> Alpha test->Beta test
+Deployment-> server-> Application server/Web Server->IIS
+
+CI/CD - pipelines
+
+
