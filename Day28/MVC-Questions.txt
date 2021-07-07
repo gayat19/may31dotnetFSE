@@ -1,0 +1,18 @@
+1) What is MVC?
+2) What are the advantages of MVC?
+3) What is ViewResult ?
+4) What are the Filters in MVC?
+5) What are Action Filters in MVC?
+6) Explain what is routing in MVC? 
+7) What are the three segments for routing important?
+8) What is Route in MVC? What is Default Route in MVC?
+9) Mention what is the difference between Temp data, View, and View Bag?
+10) What is Partial View in MVC?
+11) Explain what is the difference between View and Partial View?
+12) What are HTML helpers in MVC?
+13) Explain attribute based routing in MVC? 
+14) What is Razor Engine?
+15) What is Scaffolding?
+16) What is Bundling and Minification in MVC?
+
+
